@@ -88,7 +88,7 @@ public class ProductoController implements Initializable, ControlledScreen {
             resultadoCategoria.close();
             resultadoMarcas.close();
         } catch (SQLException e) {
-            System.out.println("Error " + e);
+            System.out.println("Error Select Marca/Categoria " + e);
         }
     }
     
@@ -165,7 +165,7 @@ public class ProductoController implements Initializable, ControlledScreen {
             while(rs.next()){
                 //Iterate Row
                 ObservableList<String> row = FXCollections.observableArrayList();
-                for(int i = 1 ; i <= rs.getMetaData().getColumnCount()+1; i++){
+                for(int i = 1 ; i <= rs.getMetaData().getColumnCount(); i++){// .getColumnCount()+1 --> .getColumnCount()
                     //Iterate Column
                     row.add(rs.getString(i));
                 }
@@ -176,7 +176,7 @@ public class ProductoController implements Initializable, ControlledScreen {
             tablaProducto.setItems(producto);
             rs.close();
           }catch(SQLException e){
-              System.out.println("Error "+e);            
+              System.out.println("Error Cargar DB "+e);            
           }
     }
     
@@ -202,7 +202,7 @@ public class ProductoController implements Initializable, ControlledScreen {
             }
             rs.close();
         } catch (SQLException ex) {
-            System.out.println("Error "+ex);
+            System.out.println("Error Cargar Productos "+ex);
         }
         
     }

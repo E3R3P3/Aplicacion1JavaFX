@@ -84,7 +84,7 @@ public class LoginController implements Initializable, ControlledScreen {
             }
             
         } catch (SQLException e) {
-            System.out.println("Error " + e.getMessage());
+            System.out.println("Error Login Controler " + e.getMessage());
         }
     }
     
