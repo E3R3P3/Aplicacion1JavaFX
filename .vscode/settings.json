@@ -9,6 +9,8 @@
         "c:\\Users\\enman\\Downloads\\javafx-sdk-21.0.6\\lib\\javafx.media.jar",
         "c:\\Users\\enman\\Downloads\\javafx-sdk-21.0.6\\lib\\javafx.swing.jar",
         "c:\\Users\\enman\\Downloads\\javafx-sdk-21.0.6\\lib\\javafx.web.jar",
-        "c:\\Users\\enman\\Downloads\\javafx-sdk-21.0.6\\lib\\javafx-swt.jar"
+        "c:\\Users\\enman\\Downloads\\javafx-sdk-21.0.6\\lib\\javafx-swt.jar",
+        "librerias/commons-codec-1.7.jar",
+        "librerias/postgresql-42.7.5.jar"
     ]
 }
